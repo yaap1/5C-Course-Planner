@@ -35,6 +35,7 @@ public class CourseSection{
     }
 
     /**
+     * Returns the section number.
      * 
      * @return sectionNumber
      */
@@ -43,6 +44,7 @@ public class CourseSection{
     }
 
     /**
+     * Returns the meeting days for the course.
      * 
      * @return meetingDays
      */
@@ -51,6 +53,7 @@ public class CourseSection{
     }
 
     /**
+     * Returns the start time of the course.
      * 
      * @return startTime
      */
@@ -59,6 +62,7 @@ public class CourseSection{
     }
 
     /**
+     * Returns the end time of the course.
      * 
      * @return endTime
      */
@@ -67,6 +71,7 @@ public class CourseSection{
     }
 
     /**
+     * Returns the location of the course.
      * 
      * @return location
      */
@@ -75,6 +80,7 @@ public class CourseSection{
     }
 
     /**
+     * Returns the professors who teach the course.
      * 
      * @return professors
      */
@@ -84,6 +90,7 @@ public class CourseSection{
 
     @Override
     /**
+     * Returns a string representation of the CourseSection object.
      * 
      * @return String version of the CourseSection object
      */
