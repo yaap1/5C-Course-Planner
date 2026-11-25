@@ -32,5 +32,6 @@ public class Course {
         this.college = college;
         this.description = description;
         this.prerequisites = prerequisites;
+        //this.sections = new ArrayList<>();
     }
 }
