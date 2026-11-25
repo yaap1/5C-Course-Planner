@@ -34,27 +34,51 @@ public class CourseSection{
         this.location = location;
     }
 
+    /**
+     * 
+     * @return sectionNumber
+     */
     public String getSectionNumber(){
         return sectionNumber;
     }
 
+    /**
+     * 
+     * @return meetingDays
+     */
     public String getMeetingDays(){
         return meetingDays;
     }
 
+    /**
+     * 
+     * @return startTime
+     */
     public String getStartTime(){
         return startTime;
     }
 
+    /**
+     * 
+     * @return endTime
+     */
     public String getEndTime(){
         return endTime;
     }
 
+    /**
+     * 
+     * @return location
+     */
     public String getLocation(){
         return location;
     }
 
+    /**
+     * 
+     * @return professors
+     */
     public ArrayList<String> getProfessors(){
-        return professors;
+        return new ArrayList<>(professors); //a copy of the professors arrayList so the actual proffessors list cant be modified
     }
 }
