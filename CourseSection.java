@@ -81,4 +81,15 @@ public class CourseSection{
     public ArrayList<String> getProfessors(){
         return new ArrayList<>(professors); //a copy of the professors arrayList so the actual proffessors list cant be modified
     }
+
+    @Override
+    /**
+     * 
+     * @return String version of the CourseSection object
+     */
+    public String toString(){
+        return "Section: " + this.sectionNumber + "\n" + "Meeting days: " + this.meetingDays 
+        + "\n" + "Start time: " + this.startTime + "\n" + "End time: " + this.endTime + "\n" 
+        + "Location: " + this.location + "\n" + "Professors: " + this.professors;
+    }
 }
