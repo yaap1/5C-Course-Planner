@@ -3,6 +3,7 @@ import java.util.ArrayList;
 /**
  * Represents a course at one of the Claremont Colleges
  * and stores its relevant information.
+ * 
  * @author Ohemaa Yaa Premuh
  */
 

@@ -99,4 +99,31 @@ public class CourseSection{
         + "\n" + "Start time: " + this.startTime + "\n" + "End time: " + this.endTime + "\n" 
         + "Location: " + this.location + "\n" + "Professors: " + this.professors;
     }
+
+    public static void main(String[] args) {
+        ArrayList<String> professors = new ArrayList<>();
+        professors.add("Kauchak");
+        professors.add("Papoutsaki");
+
+        CourseSection section = new CourseSection("01", professors, "TR", "13:15", "14:30", "Edmunds 101");
+
+        // Test getter methods
+        System.out.println(section.getSectionNumber());
+        System.out.println(section.getMeetingDays());
+        System.out.println(section.getStartTime());
+        System.out.println(section.getEndTime());
+        System.out.println(section.getLocation());
+        System.out.println(section.getProfessors());
+
+        // Test toString
+        System.out.println(section);
+
+        // Check that modifying the original professors list does not affect the professors list stored in the CourseSection object.
+        professors.clear();
+        System.out.println(section.getProfessors());
+
+        // Check that modifying the list returned by getProfessors() does not affect the professors list stored in the CourseSection object.
+        section.getProfessors().clear();
+        System.out.println(section.getProfessors());
+    }
 }
