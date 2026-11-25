@@ -11,7 +11,7 @@ public class Course {
     private String courseName;
     private String department;
     private String college;
-    private ArrayList<CourseSection> sections;
+    //private ArrayList<CourseSection> sections; //class needs to be completed
     private String description; //maybe?
     private ArrayList<String> prerequisites;
 
@@ -22,16 +22,14 @@ public class Course {
      * @param courseName the name of the course
      * @param department the department offering the course
      * @param college the college offering the course
-     * @param professor the professor teaching the course
      * @param description the description of the course
      * @param prerequisites the list of required prerequisite courses
      */
-    public Course(String courseCode, String courseName, String department, String college, String professor, String description, ArrayList<String> prerequisites){
+    public Course(String courseCode, String courseName, String department, String college, String description, ArrayList<String> prerequisites){
         this.courseCode = courseCode;
         this.courseName = courseName;
         this.department = department;
         this.college = college;
-        this.professor = professor;
         this.description = description;
         this.prerequisites = prerequisites;
     }
