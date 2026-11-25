@@ -5,6 +5,7 @@ import java.util.ArrayList;
  * and stores its relevant information.
  * 
  * @author Ohemaa Yaa Premuh
+ * @author Andrey Motchenko (course-code and course-name getters)
  */
 
 public class Course {
@@ -34,5 +35,23 @@ public class Course {
         this.description = description;
         this.prerequisites = prerequisites;
         //this.sections = new ArrayList<>();
+    }
+
+    /**
+     * Returns the course code so the track planner can identify this course.
+     *
+     * @return the code stored by the constructor
+     */
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    /**
+     * Returns the course name so the track planner can display the CSV title.
+     *
+     * @return the name stored by the constructor
+     */
+    public String getCourseName() {
+        return courseName;
     }
 }
