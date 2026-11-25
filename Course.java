@@ -11,7 +11,7 @@ public class Course {
     private String courseName;
     private String department;
     private String college;
-    private String professor;
+    private ArrayList<CourseSection> sections;
     private String description; //maybe?
     private ArrayList<String> prerequisites;
 
